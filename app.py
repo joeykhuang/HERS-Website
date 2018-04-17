@@ -315,7 +315,7 @@ def update_figure(n_clicks,mortalityWeight, ratingsWeight, safetyWeight, costWei
         a = getHosRankings(mortalityWeight, ratingsWeight, safetyWeight, costWeight, b)
         a = a.reset_index()
         a = a.drop(['TotalRanking', 'MortalityRanked', 'PatientRanked', 'County Name', 'PSIRanked', 'SpendingRanked', 'Longitude', 'Latitude', 'Phone Number'], axis=1)
-        a.columns = ['City', 'Hospital Name', 'ZIP Code', 'Ratings', 'Distance']
+        a.columns = ['City', 'Hospital Name', 'ZIP Code', 'Distance', 'Ratings']
 
         return a.to_dict('records')
 
