@@ -1,0 +1,4 @@
+hersenv
+*.pyc
+.DS_Store
+.env
