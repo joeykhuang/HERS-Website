@@ -76,7 +76,7 @@ def getHosDistance(usrzip, numHospitals, hosDf1):
         closeHospitals = stateHospitals[:numHospitals]
     return closeHospitals
 
-app = dash.Dash(__name__, static_folder='assets')
+app = dash.Dash(__name__)
 server = app.server
 
 app.scripts.config.serve_locally=True
