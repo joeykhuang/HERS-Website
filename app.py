@@ -77,6 +77,7 @@ def getHosDistance(usrzip, numHospitals, hosDf1):
     return closeHospitals
 
 app = dash.Dash(__name__, static_folder='assets')
+server = app.server
 
 app.scripts.config.serve_locally=True
 app.css.config.serve_locally=True
@@ -372,4 +373,4 @@ def update_figure(n_clicks,mortalityWeight, ratingsWeight, safetyWeight, costWei
     }
 
 if __name__ == '__main__':
-    app.server.run(port=4000, host='127.0.0.1')
+    app.run_server(debug=True)
