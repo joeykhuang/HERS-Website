@@ -151,7 +151,7 @@ app.layout = html.Div([
 
             html.Div([
                 dcc.Input(id='zip-id', value='', type='text', placeholder='Zip Code'),
-                dcc.Input(id='num-hos', value='', type='text', placeholder='20'),
+                dcc.Input(id='num-hos', value='', type='text', placeholder='Number of Hospitals'),
                 html.Button(id='submit-button', n_clicks=0, children='Submit'),
             ], style={'width':900, 'margin':25})
         ], className='four columns wind-histogram'),
@@ -351,7 +351,7 @@ def update_figure(n_clicks,mortalityWeight, ratingsWeight, safetyWeight, costWei
                     color='rgb(255, 68, 58)'
                 ),
                 hoverinfo="text",
-                text=a['Hospital Name'],
+                text="" + a['Hospital Name'] + "\n" + a['TotalRankingReranked'],
             )
         ],
         'layout': go.Layout(
