@@ -351,7 +351,7 @@ def update_figure(n_clicks,mortalityWeight, ratingsWeight, safetyWeight, costWei
                     color='rgb(255, 68, 58)'
                 ),
                 hoverinfo="text",
-                text="" + a['Hospital Name'] + "\n" + a['TotalRankingReranked'],
+                text=a['Hospital Name'],
             )
         ],
         'layout': go.Layout(
