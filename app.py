@@ -89,7 +89,7 @@ app.layout = html.Div([
     html.Link(href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i', rel='stylesheet'),
 
     html.Div([
-        html.H2("Hospital Evalutation Ranking System (HERS) -- IMMC18382352"),
+        html.H2("Hospital Evalutation Ranking System (HERS) -- IMMC2018021"),
         html.Img(src="https://s3-ap-southeast-1.amazonaws.com/hospitalevaluationrankingsystem/Logo.png"),
     ], className = 'banner'),
     html.Div([
