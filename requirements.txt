@@ -9,7 +9,7 @@ dash-renderer==0.12.1
 dash-table-experiments==0.6.0
 decorator==4.3.0
 enum34==1.1.6
-Flask==0.12.2
+Flask==0.12.3
 Flask-Compress==1.4.0
 functools32==3.2.3.post2
 gunicorn==19.7.1
@@ -26,7 +26,7 @@ pandas==0.22.0
 plotly==2.5.1
 python-dateutil==2.7.2
 pytz==2018.4
-requests==2.18.4
+requests==2.20.0
 six==1.11.0
 traitlets==4.3.2
 urllib3==1.22
